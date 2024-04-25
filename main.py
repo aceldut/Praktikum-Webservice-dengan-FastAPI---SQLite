@@ -106,7 +106,6 @@ def tampil_semua_mhs():
 
 from fastapi.encoders import jsonable_encoder
 
-
 @app.put("/update_mhs_put/{nim}",response_model=Mhs)
 def update_mhs_put(response: Response,nim: str, m: Mhs ):
     #update keseluruhan
